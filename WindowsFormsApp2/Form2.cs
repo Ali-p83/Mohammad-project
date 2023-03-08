@@ -25,7 +25,7 @@ namespace WindowsFormsApp2
             int y = Convert.ToInt32(textBox1.Text);
             int qree;
             Random x = new Random();
-            qree = x.Next(001,y);
+            qree = x.Next(001,y+1);
             lblwincode.Text = qree.ToString();
             Display();
         }

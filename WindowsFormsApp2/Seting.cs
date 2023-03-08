@@ -63,7 +63,7 @@ namespace WindowsFormsApp2
                 cmd.ExecuteNonQuery();
                 con.Close();
                 Display();
-
+                textBox1.Text = textBox2.Text = textBox3.Text = "";
 
                 MessageBox.Show("عملیات با موفقیت انجام شد", "پیغام", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
             }
@@ -100,7 +100,7 @@ namespace WindowsFormsApp2
         private void dataGridView1_MouseUp(object sender, MouseEventArgs e)
         {
             textBox1.Text = dataGridView1[0, dataGridView1.CurrentRow.Index].Value.ToString();
-
+            textBox2.Text = textBox3.Text = "";
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -19,12 +19,14 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Hide();
             new Seting().ShowDialog();
             
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Hide();
             new Form2().ShowDialog();
         }
 
